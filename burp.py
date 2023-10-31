@@ -51,7 +51,6 @@ def burpOne(userShadowInfo:str, dictPath:str, method:int):
         gen = read_name_from_file('./passwdDict.txt')
     print(f'正在爆破 {userName} 密码中.')
     for mingwen in gen:
-        print(mingwen)
         if miwen == crypt.crypt(mingwen,salt):
             print(f"username:{userName} -> passwd:{mingwen}")
             return
